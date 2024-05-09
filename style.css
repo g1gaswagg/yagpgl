@@ -17,7 +17,7 @@ body {
   grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
                  "1fr 1fr 1fr 1fr 1fr" 33.33vh
                  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
-  grid-gap: 5px;
+  grid-gap: 1px;
 }
 .container .box
 {
