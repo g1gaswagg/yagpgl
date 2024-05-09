@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'EbrimaBD', sans-serif;
+    overflow: clip;
 }
 .container {
   width: 100%;
