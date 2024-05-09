@@ -32,3 +32,6 @@
 .long {
     grid-row: span 2;
 }
+.wide {
+  grid-column: span 2;
+}
