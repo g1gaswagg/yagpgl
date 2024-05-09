@@ -35,8 +35,15 @@ border: 1px #0f0 solid;
   object-fit: cover;
   transition: 0.2s ease-in-out;
 }
-.container .box img:hover {
-  filter: brightness(0.2);
+.textBx:hover {
+  opacity: 0.8;
+}
+.textBx {
+  background: #000;
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
 }
 .long {
     grid-row: span 2;
