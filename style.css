@@ -46,6 +46,7 @@ border: 1px #0f0 solid;
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
+  text-align: center;
 }
 .long {
     grid-row: span 2;
