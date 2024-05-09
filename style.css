@@ -25,7 +25,7 @@ body {
   background: #ccc;
 border: 1px #0f0 solid;
 }
-.container .box img
+.container .box img, .textBx
 {
   position: absolute;
   top: 0;
