@@ -25,10 +25,12 @@
 					
 					window.eaglercraftXOpts = {
 						container: "game_frame",
-						assetsURI: "assets.epk",
+						assetsURI: "/games/eaglercraftx/assets.epk",
 						localesURI: "lang/",
 						servers: [
-							{ addr: "wss://omit.tk", name: "OMIT" }
+							{ addr: "wss://omit.tk", name: "OMIT" },
+							{ addr: "wss://zentic.cc", name: "Zentic" },
+							{ addr: "wss://eagler.psr.tf", name: "iEvade" }
 						]
 					};
 					
@@ -41,7 +43,7 @@
 						if(s) window.eaglercraftXOpts.joinServer = s;
 					}
 					
-					
+					main();
 				}
 			});
 		</script>
