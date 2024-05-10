@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+    background: #040404;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+    grid-template: '1fr 1fr 1fr' 10vh
+                    '1fr 1fr 1fr' 10vh
+                    '1fr 1fr 1fr' 10vh;
+    grid-auto-flow: dense;
+  }
+  .grid div {
+    width: 10vh;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    font-size: 10vh;
+    cursor: crosshair;
+  }
+  .grid div:hover {
+    background: #ff0000;
+    transition: 0.1s;
+    opacity: 0.9;
+  }
+  .grid div:active {
+    opacity: 0.7;
+  }
+  .notification {
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    width: 100vw;
+    background: #76e393;
+    padding: 2vh;
+  }
+  .notification button {
+    background: #65d282;
+    position: fixed;
+    outline: 0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 0;
+    left: 95vw;
+    top: 1vh;
+  }

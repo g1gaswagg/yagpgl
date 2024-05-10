@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/games/noughtsandcrosses/style.css">
+    <link rel="icon" href="/games/noughtsandcrosses/favicon.ico">
+    <title>Noughts and Crosses</title>
+      <script>
+        board = [9];
+        player = "X";
+        function changeMe(box)
+        {
+          if (document.getElementById(box).innerHTML == "")
+          {
+            document.getElementById(box).innerHTML = player;
+            if (player == "X")
+            {
+              player = "O";
+            }
+            else
+            {
+              player = "X";
+            }
+            board[box] = player;
+            check(player);
+          }
+        }
+        function check()
+        {
+          // Horizontals
+          if (board[0] == player && board[1] == player && board[2] == player) {
+            win();
+          }
+          else if (board[3] == player && board[4] == player && board[5] == player) {
+            win();
+          }
+          else if (board[6] == player && board[7] == player && board[8] == player) {
+            win();
+          }
+          // Verticals
+          else if (board[0] == player && board[3] == player && board[6] == player) {
+            win();
+          }
+          else if (board[1] == player && board[4] == player && board[7] == player) {
+            win();
+          }
+          else if (board[2] == player && board[5] == player && board[8] == player) {
+            win();
+          }
+          // Diagonals
+          else if (board[0] == player && board[4] == player && board[8] == player) {
+            win();
+          }
+          else if (board[2] == player && board[4] == player && board[6] == player) {
+            win();
+          }
+        }
+        function win() {
+          document.querySelector(".notification").style.display = "flex";
+        }
+        function redo() {
+          for (let i = 0; i < board.length; i++) {
+            board[i] = "";
+            document.getElementById(i).innerHTML = "";
+            document.querySelector(".notification").style.display = "none";
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <div class="notification">
+      <p>Game over!</p>
+      <button class="w3-button w3-round-large" onclick="redo();">Retry!</button>
+    </div>
+    <div class="container">
+      <div class="grid">
+        <div onclick="changeMe(id)" id="0"></div>
+        <div onclick="changeMe(id)" id="1"></div>
+        <div onclick="changeMe(id)" id="2"></div>
+        <div onclick="changeMe(id)" id="3"></div>
+        <div onclick="changeMe(id)" id="4"></div>
+        <div onclick="changeMe(id)" id="5"></div>
+        <div onclick="changeMe(id)" id="6"></div>
+        <div onclick="changeMe(id)" id="7"></div>
+        <div onclick="changeMe(id)" id="8"></div>
+      </div>
+    </div>
+  </body>
+</html>
