@@ -19,13 +19,11 @@ body {
                  "1fr 1fr 1fr 1fr 1fr" 33.33vh
                  "1fr 1fr 1fr 1fr 1fr" 33.33vh
                  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
-  grid-gap: 1px;
 }
 .container .box
 {
   position: relative;
   background: #ccc;
-border: 2px #fff solid;
 }
 .container .box img, .textBx
 {
