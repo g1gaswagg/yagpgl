@@ -61,3 +61,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.title {
+    grid-column: span 5;
+    grid-row: span 3;
+}
