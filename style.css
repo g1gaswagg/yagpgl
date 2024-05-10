@@ -63,5 +63,11 @@ a {
 }
 .title {
     grid-column: span 5;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
     grid-row: span 3;
 }
