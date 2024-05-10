@@ -1,10 +1,9 @@
-@import url('assets/fonts/css/ebrima.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'EbrimaBD', sans-serif;
+    font-family: 'Play', sans-serif;
     overflow-x: clip;
 }
 body {
